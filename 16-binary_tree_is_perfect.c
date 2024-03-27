@@ -18,7 +18,8 @@ size_t perfect_tree_height(const binary_tree_t *tree)
 		height_left = tree->left ? 1 + perfect_tree_height(tree->left) : 0;
 		height_right = tree->right ? 1 + perfect_tree_height(tree->right) : 0;
 
-		if (height_left == height_right)
+		if (height_left == height_right ||
+				(height_left != 0 && height_right != 0))
 			return (1);
 		else
 			return (0);
