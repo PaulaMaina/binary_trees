@@ -27,8 +27,10 @@ size_t perfect_tree_height(const binary_tree_t *tree)
 }
 
 /**
- * is_perfect: Recursively if a binary is perfect
+ * is_perfect - Recursively if a binary is perfect
  * @tree: Pointer to the root node of the tree
+ *
+ * Description: If the tree height is 0 or NULL, return 0
  *
  * Return: 1 if it is perfect otherwise 0
  */
